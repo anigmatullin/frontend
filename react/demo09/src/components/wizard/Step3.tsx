@@ -8,10 +8,17 @@ import { Link } from 'react-router-dom';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 
+import FileList from '../FileList';
+
 
 export default function Step3()
 {
   const finnish = `https://www.youtube.com/watch?v=KzCeNjRd2Bk`;
+
+  const state = store.getState();
+  const info = state.name;
+
+  
 
   // function handleInc()
   // {
@@ -24,7 +31,15 @@ export default function Step3()
   // }
 
   return (
-    <div>
+    <div className='container'>
+
+      <ul>
+        <li>{info.firstname}</li>
+        <li>{info.lastname}</li>
+        <li>{info.position}</li>
+      </ul>
+
+      <FileList />
 
 
     <Stack spacing={2} direction="row">
