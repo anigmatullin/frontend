@@ -1,0 +1,21 @@
+{
+  "name": "demo11",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.4",
+    "vite": "^2.9.9"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.8.3",
+    "@types/uuid": "^8.3.4",
+    "lit": "^2.2.7",
+    "redux": "^4.2.0",
+    "uuid": "^8.3.2"
+  }
+}
