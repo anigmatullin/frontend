@@ -7,7 +7,7 @@ export default function One() {
     const refval = useRef(0);
     refval.current++;
 
-    console.log(refval);
+    // console.log(refval);
 
     useEffect(() => {
         console.log("Mounted!");
